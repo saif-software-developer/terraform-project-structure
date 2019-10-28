@@ -19,10 +19,6 @@ provider "aws" {
   region = "${var.region}"
 }
 
-provider "alks" {
-  url = "https://alks.coxautoinc.com/rest"
-}
-
 terraform {
   backend "s3" {}
 }

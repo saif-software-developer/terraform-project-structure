@@ -7,9 +7,9 @@ variable "region" {
   default = "us-west-2"
 }
 
-variable "fd-dealercodes-lambda" {
+variable "xx-dealercodes-lambda" {
   type = string
-  default ="arn:aws:iam::489430075229:role/acct-managed/fd-dealercodes-lambda"
+  default ="arn:aws:iam::xxxx:role/acct-managed/xx-dealercodes-lambda"
 }
 
 #
@@ -17,10 +17,6 @@ variable "fd-dealercodes-lambda" {
 #
 provider "aws" {
   region = "${var.region}"
-}
-
-provider "alks" {
-  url = "https://alks.coxautoinc.com/rest"
 }
 
 terraform {

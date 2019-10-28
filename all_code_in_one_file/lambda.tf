@@ -14,7 +14,7 @@ variable "resource-suffix" {
 
 variable "fd-dealercodes-lambda" {
   type = string
-  default ="arn:aws:iam::489430075229:role/acct-managed/fd-dealercodes-lambda"
+  default ="arn:aws:iam::xxxxx:role/acct-managed/xx-dealercodes-lambda"
 }
 
 #
@@ -35,10 +35,6 @@ data "archive_file" "dummy" {
 #
 provider "aws" {
   region = "${var.region}"
-}
-
-provider "alks" {
-  url = "https://alks.coxautoinc.com/rest"
 }
 
 terraform {

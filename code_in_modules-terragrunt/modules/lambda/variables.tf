@@ -28,5 +28,5 @@ variable "timeout" {
 
 variable "fd-dealercodes-lambda" {
   type = string
-  default ="arn:aws:iam::489430075229:role/acct-managed/fd-dealercodes-lambda"
+  default ="arn:aws:iam::xxxx:role/acct-managed/xx-dealercodes-lambda"
 }
